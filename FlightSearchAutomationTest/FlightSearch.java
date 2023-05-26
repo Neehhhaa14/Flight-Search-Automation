@@ -19,6 +19,7 @@ import org.testng.annotations.Test;
 import flightSearchAutomationPages.EnteringFlightDetails;
 import flightSearchAutomationPages.PrintingAvlFlights;
 import flightSearchAutomationPages.ReportGen;
+
 @Listeners(ReportGen.class)
 public class FlightSearch {
 	WebDriver driver;
@@ -39,92 +40,105 @@ public class FlightSearch {
 	}
 
 	@Test(priority = 2)
-	public void clickOnFromStation() {
+	public void clickOnFromStation() throws InterruptedException {
 		flightDetailsObjects.ClickOnOrigin("hyd");
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 1)
-	public void testPopup() {
+	public void testPopup() throws InterruptedException {
 		flightDetailsObjects.ClickOnPopup();
+		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 3)
-	public void testHyd() {
+	public void testHyd() throws InterruptedException {
 		flightDetailsObjects.ClickOnHyd();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 4)
-	public void testDestination() {
+	public void testDestination() throws InterruptedException {
 		flightDetailsObjects.ClickOnDestination("pun");
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 5)
-	public void testPune() {
+	public void testPune() throws InterruptedException {
 		flightDetailsObjects.ClickOnPune();
+		Thread.sleep(500);
 	}
 
 	@Test(priority = 6)
-	public void testDeparture() {
+	public void testDeparture() throws InterruptedException {
 		flightDetailsObjects.ClickOnDeparture();
+		Thread.sleep(2000);
+
 	}
 
 	@Test(priority = 7)
-	public void testDate() {
+	public void testDate() throws InterruptedException {
 		flightDetailsObjects.ClickOnDate();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 8)
-	public void testTraveller() {
+	public void testTraveller() throws InterruptedException {
 		flightDetailsObjects.ClickOnTraveller();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 9)
-	public void testEconomy() {
+	public void testEconomy() throws InterruptedException {
 		flightDetailsObjects.ClickOnEconomy();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 10)
-	public void testSearch() {
+	public void testSearch() throws InterruptedException {
 		flightDetailsObjects.ClickOnSearch();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 11)
-	public void testDetails() {
+	public void testDetails() throws InterruptedException {
 		printingAvlFlightsObject.CheckingDetails();
+		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 12)
-	public void displayDetails() {
+
+	public void displayDetails() throws InterruptedException {
 		printingAvlFlightsObject.checkTable();
+		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 13)
 	public void captureScreenshot() throws IOException, InterruptedException {
 		TakesScreenshot capture = (TakesScreenshot) driver;
-		 String date=new SimpleDateFormat("dd-mm-yyyy-hh-mm-ss-ms").format(new Date());
 		File source = capture.getScreenshotAs(OutputType.FILE);
-		File target = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture2" + date +".png");
+		File target = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture2.png");
 		FileUtils.copyFile(source, target);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scroll (0,  500)");
 		Thread.sleep(3000);
 		File source1 = capture.getScreenshotAs(OutputType.FILE);
-		File target1 = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture3" + date +".png");
+		File target1 = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture3.png");
 		FileUtils.copyFile(source1, target1);
 		js.executeScript("window.scroll (0,  1000)");
 		Thread.sleep(3000);
 		File source2 = capture.getScreenshotAs(OutputType.FILE);
-		File target2 = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture4" + date +".png");
+		File target2 = new File("C:\\Users\\NehaKuSingh\\Desktop\\Project\\capture4.png");
 		FileUtils.copyFile(source2, target2);
 
 	}
 
 	@AfterTest
 	public void closure() {
-		driver.close();
+		// driver.close();
 	}
 
 }

@@ -1,26 +1,19 @@
 package flightSearchAutomationPages;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class PrintingAvlFlights {
 	By CheckingDetailsHyd = By.xpath("//div[@class='right-searchbarbtm-in']//div[2]//span[text()='Hyderabad (HYD)']");
 	By CheckingDetailsPune = By.xpath("//div[@class='right-searchbarbtm-in']//div[3]//span[text()='Pune (PNQ)']");
-	By CheckingDetailsDate = By.xpath("//a[@tabindex='0']//span[text()='Wed, 24 May']");
-	By Flights = By.tagName("div");
-	By table = By.xpath("//div[@class='right-searchbarbtm']");
-	By FlightNameAirIndia = By.xpath(("//div[@class='right-searchbarbtm-in']//div//div//b[text()='Air India']"));
-	By FlightNameVistara = By.xpath("//div[@class='right-searchbarbtm-in']//div//div//b[text()='Vistara']");
+	By CheckingDetailsDate = By.xpath("//a[@tabindex='0']//span[text()='Fri, 26 May']");
+	By table = By.xpath("//div[@class='col-12 col-md-9 right-searchbar']");
+	By FlightName = By.xpath(("//div[@class='right-searchbarbtm']"));
+	By FlightName2 = By.className("right-searchbarbtm-in");
 	WebDriver driver;
 
 	public PrintingAvlFlights(WebDriver driver) {
@@ -41,13 +34,14 @@ public class PrintingAvlFlights {
 
 	public void checkTable() {
 		WebElement tableRow = driver.findElement(table);
-		List<WebElement> row = tableRow.findElements(Flights);
-		System.out.println("number of rows:" + row.size());
-		for (WebElement name : row) {
-			String flightName = name.findElement(FlightNameAirIndia).getText();
-			String flightName2 = name.findElement(FlightNameVistara).getText();
-			System.out.println("flight name1:" + flightName);
-			System.out.println("flight name2:" + flightName2);
+		List<WebElement> Flight = tableRow.findElements(FlightName);
+		System.out.println("number of flights:" + Flight.size());
+		for (WebElement name : Flight) {
+			String flightName = name.findElement(FlightName2).getText();
+			System.out.println("flight name:" + flightName);
+
 		}
+
 	}
+
 }

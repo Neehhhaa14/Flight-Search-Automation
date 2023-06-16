@@ -34,7 +34,7 @@ public class FlightSearch {
 		driver.get("https://www.air.irctc.co.in/");
 		String title = driver.getTitle();
 		Assert.assertTrue(true, title);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		flightDetailsObjects = new EnteringFlightDetails(driver);
 		printingAvlFlightsObject = new PrintingAvlFlights(driver);
 	}

@@ -2,68 +2,68 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T15:09:52 IST" name="Default suite" finished-at="2023-05-24T15:10:14 IST" duration-ms="22365">
+  <suite started-at="2023-05-29T14:59:21 IST" name="Default suite" finished-at="2023-05-29T15:00:05 IST" duration-ms="44166">
     <groups>
     </groups>
-    <test started-at="2023-05-24T15:09:52 IST" name="Default test" finished-at="2023-05-24T15:10:14 IST" duration-ms="22365">
+    <test started-at="2023-05-29T14:59:21 IST" name="Default test" finished-at="2023-05-29T15:00:05 IST" duration-ms="44166">
       <class name="FlightSearchAutomationTest.FlightSearch">
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:09:53 IST" name="launchTheBrowser" finished-at="2023-05-24T15:10:02 IST" duration-ms="9216" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:21 IST" name="launchTheBrowser" finished-at="2023-05-29T14:59:30 IST" duration-ms="8419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method signature="testPopup()[pri:1, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:02 IST" name="testPopup" finished-at="2023-05-24T15:10:03 IST" duration-ms="1058" status="PASS">
+        <test-method signature="testPopup()[pri:1, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:30 IST" name="testPopup" finished-at="2023-05-29T14:59:34 IST" duration-ms="4517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPopup -->
-        <test-method signature="clickOnFromStation()[pri:2, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:03 IST" name="clickOnFromStation" finished-at="2023-05-24T15:10:03 IST" duration-ms="204" status="PASS">
+        <test-method signature="clickOnFromStation()[pri:2, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:34 IST" name="clickOnFromStation" finished-at="2023-05-29T14:59:36 IST" duration-ms="2189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnFromStation -->
-        <test-method signature="testHyd()[pri:3, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:03 IST" name="testHyd" finished-at="2023-05-24T15:10:03 IST" duration-ms="318" status="PASS">
+        <test-method signature="testHyd()[pri:3, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:36 IST" name="testHyd" finished-at="2023-05-29T14:59:39 IST" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHyd -->
-        <test-method signature="testDestination()[pri:4, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:03 IST" name="testDestination" finished-at="2023-05-24T15:10:04 IST" duration-ms="141" status="PASS">
+        <test-method signature="testDestination()[pri:4, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:39 IST" name="testDestination" finished-at="2023-05-29T14:59:41 IST" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDestination -->
-        <test-method signature="testPune()[pri:5, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testPune" finished-at="2023-05-24T15:10:04 IST" duration-ms="267" status="PASS">
+        <test-method signature="testPune()[pri:5, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:41 IST" name="testPune" finished-at="2023-05-29T14:59:42 IST" duration-ms="818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPune -->
-        <test-method signature="testDeparture()[pri:6, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testDeparture" finished-at="2023-05-24T15:10:04 IST" duration-ms="96" status="PASS">
+        <test-method signature="testDeparture()[pri:6, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:42 IST" name="testDeparture" finished-at="2023-05-29T14:59:44 IST" duration-ms="2154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeparture -->
-        <test-method signature="testDate()[pri:7, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testDate" finished-at="2023-05-24T15:10:04 IST" duration-ms="92" status="PASS">
+        <test-method signature="testDate()[pri:7, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:44 IST" name="testDate" finished-at="2023-05-29T14:59:46 IST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDate -->
-        <test-method signature="testTraveller()[pri:8, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testTraveller" finished-at="2023-05-24T15:10:04 IST" duration-ms="96" status="PASS">
+        <test-method signature="testTraveller()[pri:8, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:46 IST" name="testTraveller" finished-at="2023-05-29T14:59:48 IST" duration-ms="2118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTraveller -->
-        <test-method signature="testEconomy()[pri:9, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testEconomy" finished-at="2023-05-24T15:10:04 IST" duration-ms="222" status="PASS">
+        <test-method signature="testEconomy()[pri:9, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:48 IST" name="testEconomy" finished-at="2023-05-29T14:59:50 IST" duration-ms="2220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEconomy -->
-        <test-method signature="testSearch()[pri:10, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testSearch" finished-at="2023-05-24T15:10:04 IST" duration-ms="113" status="PASS">
+        <test-method signature="testSearch()[pri:10, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:50 IST" name="testSearch" finished-at="2023-05-29T14:59:53 IST" duration-ms="2201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearch -->
-        <test-method signature="testDetails()[pri:11, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:04 IST" name="testDetails" finished-at="2023-05-24T15:10:06 IST" duration-ms="1811" status="PASS">
+        <test-method signature="testDetails()[pri:11, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:53 IST" name="testDetails" finished-at="2023-05-29T14:59:55 IST" duration-ms="2128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method signature="displayDetails()[pri:12, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:06 IST" name="displayDetails" finished-at="2023-05-24T15:10:07 IST" duration-ms="604" status="PASS">
+        <test-method signature="displayDetails()[pri:12, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:55 IST" name="displayDetails" finished-at="2023-05-29T14:59:58 IST" duration-ms="3145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayDetails -->
-        <test-method signature="captureScreenshot()[pri:13, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:07 IST" name="captureScreenshot" finished-at="2023-05-24T15:10:14 IST" duration-ms="7312" status="PASS">
+        <test-method signature="captureScreenshot()[pri:13, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T14:59:58 IST" name="captureScreenshot" finished-at="2023-05-29T15:00:05 IST" duration-ms="7202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-24T15:10:14 IST" name="closure" finished-at="2023-05-24T15:10:14 IST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:FlightSearchAutomationTest.FlightSearch@4cc451f2]" started-at="2023-05-29T15:00:05 IST" name="closure" finished-at="2023-05-29T15:00:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
